@@ -1,4 +1,4 @@
-\documentclass[12pt, a4paper]{article}
+\documentclass[12pt, a4paper, bahasa]{article}
 
 \usepackage[margin=2.5cm]{geometry} 
 \usepackage{fancyhdr}               
@@ -8,6 +8,15 @@
 \usepackage{titlesec}
 \usepackage{wrapfig}         
 \usepackage{subcaption}
+\usepackage{csquotes}
+\usepackage[
+    backend=biber,
+    style=ieee,
+    language=auto,
+    autolang=other
+]{biblatex}
+
+\addbibresource{refs.bib}
 
 % Pengaturan Header dan Footer
 \pagestyle{fancy}
@@ -15,7 +24,10 @@
 \lhead{\textbf{Nama:} Khalilullah Al Faath}   
 \rhead{\textbf{NIM:} 25/566643/PPA/07139}        
 \renewcommand{\headrulewidth}{0.4pt}         
-\renewcommand{\footrulewidth}{0.4pt}         
+\renewcommand{\footrulewidth}{0.4pt}
+
+\renewcommand{\tablename}{Tabel}
+\renewcommand{\figurename}{Gambar}
 
 
 \begin{document}
@@ -27,7 +39,10 @@
 
 
 \section{Pranala Kode}
-Hasil \textit{running} implementasi kode dapat diakses di pranala repositori GitHub berikut \url{https://github.com/khalilullahalfaath/comparing-ranked-retrieval-models/blob/main/1_STBI.ipynb}.
+Hasil \textit{running} implementasi kode dapat diakses di pranala repositori GitHub berikut \url{} \cite{klir_fuzzy_1995}.
+
+\section{Referensi}
+\printbibliography[heading=none]
 
 
 \end{document}
